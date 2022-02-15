@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "../../styles/TodaySpecialFood.module.css";
 
 function FoodPost({ post }) {
-  const { name, description, price, category, image } = post;
+  const { id, name, description, price, category, image } = post;
   return (
     <>
       <div className={`${styles.food_post} todays_special_food1`}>
@@ -22,7 +22,7 @@ function FoodPost({ post }) {
               src={image}
               alt=""
               data-bs-toggle="modal"
-              data-bs-target="#food1"
+              data-bs-target={`#food${id}`}
               type="button"
             />
           </div>
@@ -48,7 +48,7 @@ function FoodPost({ post }) {
       {/* <!-- Modal --> */}
       <div
         className="modal fade"
-        id="food1"
+        id={`food${id}`}
         tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"

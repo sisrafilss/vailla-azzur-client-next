@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "../../styles/TodaySpecialFood.module.css";
 
 function FoodPost2({ post }) {
-  const { name, description, price, category, image } = post;
+  const {id, name, description, price, category, image } = post;
   return (
     <>
       <div className={`${styles.food_post} todays_special_food1`}>
@@ -22,7 +22,10 @@ function FoodPost2({ post }) {
           <div className={styles.food_content}>
             <div className={styles.food_content_box}>
               <h2 className={styles.food_content_box_h2}>
-                <a className={styles.food_content_box_h2_a} href="http://localhost:3000">
+                <a
+                  className={styles.food_content_box_h2_a}
+                  href="http://localhost:3000"
+                >
                   {name}
                 </a>
               </h2>
@@ -39,7 +42,7 @@ function FoodPost2({ post }) {
               src={image}
               alt=""
               data-bs-toggle="modal"
-              data-bs-target="#food1"
+              data-bs-target={`#food${id}`}
               type="button"
             />
           </div>
@@ -48,7 +51,7 @@ function FoodPost2({ post }) {
       {/* <!-- Modal --> */}
       <div
         className="modal fade"
-        id="food1"
+        id={`food${id}`}
         tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
