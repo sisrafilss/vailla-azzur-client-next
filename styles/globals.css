@@ -305,7 +305,7 @@ h2 {
   background: #f4b350;
 }
 .title-section.white h1 {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .title-section.white p {
   color: #ccc;
@@ -431,7 +431,7 @@ section#about-section .about-box.left-content .rest-about-box {
 /*-------------------------------------------------*/
 /* =  Today's Special section
 /*-------------------------------------------------*/
-section#special-section {
+/* section#special-section {
   padding: 100px 0;
   background: url("../upload/ban1.jpg") center center;
   background-size: cover;
@@ -656,7 +656,7 @@ section#special-section
   .owl-controls
   .owl-buttons {
   display: none;
-}
+} */
 /*-------------------------------------------------*/
 /* =  Menu section
 /*-------------------------------------------------*/

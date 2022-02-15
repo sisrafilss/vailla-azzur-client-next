@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.css";
 import Script from "next/script";
 import About from "../components/about";
-import SpecialSection from "../components/specialSection";
+import SpecialSection from "../components/todaysSpecialFood/todaySpecialFood";
 
 function Home() {
   return (
