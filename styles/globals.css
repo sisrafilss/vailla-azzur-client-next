@@ -266,6 +266,11 @@ h2 {
   margin: 0 0 10px;
   line-height: 20px;
 }
+
+a {
+  text-decoration: none !important;
+}
+
 #container {
   opacity: 0;
   transition: all 0.2s ease-in-out;
@@ -275,6 +280,10 @@ h2 {
 }
 #container.active {
   opacity: 1;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 /*-------------------------------------------------*/
 /* =  content & Home section
@@ -660,6 +669,7 @@ section#special-section
 /*-------------------------------------------------*/
 /* =  Menu section
 /*-------------------------------------------------*/
+/* 
 section#menu-section {
   padding: 100px 0;
 }
@@ -780,7 +790,7 @@ section#menu-section .menu-box ul.menu-list-items li:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: none;
-}
+} */
 /*-------------------------------------------------*/
 /* =  Reservation section
 /*-------------------------------------------------*/

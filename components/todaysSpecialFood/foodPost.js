@@ -32,14 +32,12 @@ function FoodPost({ post }) {
               <h2 className={styles.food_content_box_h2}>
                 <a
                   className={styles.food_content_box_h2_a}
-                  href="javascript:void(0)"
+                  href="http://localhost:3000"
                 >
                   {name}
                 </a>
               </h2>
-              <p className={styles.food_content_box_p}>
-                {description}
-              </p>
+              <p className={styles.food_content_box_p}>{description}</p>
               <span className={styles.price}>TK {price}</span>
               <span className={styles.category}>{category}</span>
               <span className={styles.special_food_btn}>Add to Cart</span>

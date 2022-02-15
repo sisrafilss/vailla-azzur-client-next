@@ -55,13 +55,13 @@ function SpecialSection() {
         <div className={styles.today_special_box}>
           <div className={styles.food_line}>
             {specialFood.slice(0, 2).map((post) => (
-              <FoodPost key={post.key} post={post} />
+              <FoodPost key={post.id} post={post} />
             ))}
           </div>
 
           <div className={styles.food_line}>
             {specialFood.slice(2, 4).map((post) => (
-              <FoodPost2 key={post.key} post={post} />
+              <FoodPost2 key={post.id} post={post} />
             ))}
           </div>
         </div>

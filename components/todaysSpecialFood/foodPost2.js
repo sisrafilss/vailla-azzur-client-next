@@ -6,7 +6,10 @@ function FoodPost2({ post }) {
   return (
     <>
       <div className={`${styles.food_post} todays_special_food1`}>
-        <div  style={{flexDirection: 'row'}} className={styles.inner_food_post}>
+        <div
+          style={{ flexDirection: "row" }}
+          className={styles.inner_food_post}
+        >
           {/* <div
                   className="food-gal"
                   data-toggle="modal"
@@ -19,10 +22,7 @@ function FoodPost2({ post }) {
           <div className={styles.food_content}>
             <div className={styles.food_content_box}>
               <h2 className={styles.food_content_box_h2}>
-                <a
-                  className={styles.food_content_box_h2_a}
-                  href="javascript:void(0)"
-                >
+                <a className={styles.food_content_box_h2_a} href="http://localhost:3000">
                   {name}
                 </a>
               </h2>
