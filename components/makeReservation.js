@@ -1,6 +1,15 @@
+import { useForm } from "react-hook-form";
 import styles from "../styles/MakeReservation.module.css";
 
 function MakeReservation() {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => console.log(data);
+
   return (
     <section id={styles.reservation_section}>
       <div className="container">
@@ -16,20 +25,25 @@ function MakeReservation() {
               </div>
 
               {/* Reservation Form */}
-              <form className={styles.reservation_form}>
+              <form
+                onSubmit={handleSubmit(onSubmit)}
+                className={styles.reservation_form}
+              >
                 <label>Guest Name:</label>
                 <input
                   type="text"
                   name="name-guest"
                   id="name-guest"
                   placeholder="Name"
+                  {...register("guestName")}
                 />
                 <label>Date:</label>
                 <input
-                  type="text"
+                  type="date"
                   name="date-guest"
                   id="date-guest"
-                  placeholder="mm/dd/yyyy"
+                  placeholder="dd/mm/yyyy"
+                  {...register("date")}
                 />
                 <div className="row">
                   <div className="col-md-6">
@@ -39,15 +53,17 @@ function MakeReservation() {
                       name="time-guest"
                       id="time-guest"
                       placeholder="7:00 pm"
+                      {...register("time")}
                     />
                   </div>
                   <div className="col-md-6">
                     <label>Pers:</label>
                     <input
-                      type="text"
+                      type="number"
                       name="pers-guest"
                       id="pers-guest"
                       placeholder="2 people"
+                      {...register("pers")}
                     />
                   </div>
                 </div>

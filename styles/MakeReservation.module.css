@@ -26,7 +26,9 @@
   font-weight: 300;
   margin-bottom: 12px;
 }
-.reservation_form input[type="text"] {
+.reservation_form input[type="text"],
+.reservation_form input[type="date"],
+.reservation_form input[type="number"] {
   display: block;
   width: 100%;
   padding: 10px 20px;
