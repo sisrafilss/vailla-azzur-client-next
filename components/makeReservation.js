@@ -1,18 +1,22 @@
+import styles from "../styles/MakeReservation.module.css";
+
 function MakeReservation() {
   return (
-    <section id="reservation-section">
+    <section id={styles.reservation_section}>
       <div className="container">
-        <div className="reservation-box">
+        <div className={styles.reservation_box}>
           <div className="row">
             <div className="col-md-6 make_reservation">
-              <div className="title-section white">
-                <h1>Make Reservation</h1>
+              <div className={`${styles.title_section}`}>
+                <h1 className="text-light">Make Reservation</h1>
                 <p>
                   Booking a table has never been so easy with free online <br />{" "}
                   restaurant reservations, booking now!!
                 </p>
               </div>
-              <form className="reservation-form">
+
+              {/* Reservation Form */}
+              <form className={styles.reservation_form}>
                 <label>Guest Name:</label>
                 <input
                   type="text"

@@ -794,6 +794,7 @@ section#menu-section .menu-box ul.menu-list-items li:last-child {
 /*-------------------------------------------------*/
 /* =  Reservation section
 /*-------------------------------------------------*/
+/* 
 section#reservation-section {
   padding: 100px 0;
   background: url("../upload/table_reservation.jpg") center center;
@@ -869,7 +870,7 @@ section#reservation-section
   input[type="submit"]:hover {
   background: #f4b350;
   color: #ffffff;
-}
+} */
 /*-------------------------------------------------*/
 /* =  Team section
 /*-------------------------------------------------*/

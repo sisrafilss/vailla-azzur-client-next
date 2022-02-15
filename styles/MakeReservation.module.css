@@ -1,0 +1,67 @@
+#reservation_section {
+  padding: 100px 0;
+  background: url("../upload/table_reservation.jpg") center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+.title_section {
+  text-align: left;
+  margin-bottom: 40px;
+}
+.title_section h1:after {
+  left: 0;
+  margin-left: 0;
+}
+.reservation_form {
+  text-align: left;
+  max-width: 370px;
+}
+.reservation_form label {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+.reservation_form input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  background: #ffffff;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border: none;
+  margin: 0 0 15px;
+  color: #999999;
+  font-size: 13px;
+  font-family: "Playfair Display", serif;
+  outline: none;
+}
+.reservation_form input[type="submit"] {
+  background: transparent;
+  color: #f4b350;
+  font-size: 12px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  border: 1px solid #f4b350;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  padding: 10px 25px 8px;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  margin: 15px 0 0;
+}
+.reservation_form input[type="submit"]:hover {
+  background: #f4b350;
+  color: #ffffff;
+}
