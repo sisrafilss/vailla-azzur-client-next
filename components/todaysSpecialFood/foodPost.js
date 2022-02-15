@@ -58,13 +58,14 @@ function FoodPost({ post }) {
             <div>
               <button
                 type="button"
-                className={"btn-close " + styles.close_button}
+                className="close btn_modal_close"
                 data-bs-dismiss="modal"
                 aria-label="Close"
-              ></button>
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <Image src={image} alt="" className="w-100" />
             </div>
-
-            <Image src={image} alt="" className="w-100" />
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "../../styles/TodaySpecialFood.module.css";
 
 function FoodPost2({ post }) {
-  const {id, name, description, price, category, image } = post;
+  const { id, name, description, price, category, image } = post;
   return (
     <>
       <div className={`${styles.food_post} todays_special_food1`}>
@@ -61,13 +61,14 @@ function FoodPost2({ post }) {
             <div>
               <button
                 type="button"
-                className={"btn-close " + styles.close_button}
+                className="close btn_modal_close"
                 data-bs-dismiss="modal"
                 aria-label="Close"
-              ></button>
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <Image src={image} alt="" className="w-100" />
             </div>
-
-            <Image src={image} alt="" className="w-100" />
           </div>
         </div>
       </div>

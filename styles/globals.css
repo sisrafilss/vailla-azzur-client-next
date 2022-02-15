@@ -1963,3 +1963,22 @@ input[name="blogs_searchbar"]:focus {
 }
 
 /* ================== CSS were in the bottom of Index.php ==================== */
+
+.btn_modal_close {
+  position: absolute;
+  margin-top: 20px;
+  color: rgb(87, 85, 85);
+  margin-left: -35px;
+  right: 20px;
+  z-index: 10;
+  background-color: transparent;
+  border: 0 !important;
+}
+.btn_modal_close:hover {
+  color: rgb(165, 159, 159);
+}
+
+.btn_modal_close span {
+  /* color: white; */
+  font-size: 28px;
+}
