@@ -6,7 +6,7 @@ function FoodPost({ post }) {
   return (
     <>
       <div className={`${styles.food_post} todays_special_food1`}>
-        <div className={styles.inner_food_post}>
+        <div className={`${styles.inner_food_post}`}>
           {/* <div
                   className="food-gal"
                   data-toggle="modal"
@@ -16,7 +16,7 @@ function FoodPost({ post }) {
                   
                 </div> */}
 
-          <div className={styles.food_gal}>
+          <div className={`${styles.food_gal}`}>
             <Image
               className={styles.food_gal_img}
               src={image}
@@ -43,6 +43,8 @@ function FoodPost({ post }) {
               <span className={styles.special_food_btn}>Add to Cart</span>
             </div>
           </div>
+
+          
         </div>
       </div>
       {/* <!-- Modal --> */}
