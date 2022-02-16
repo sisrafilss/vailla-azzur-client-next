@@ -1,0 +1,106 @@
+#team_section {
+  padding: 100px 0;
+}
+.team_post {
+  margin-top: 5px;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+.team_gal {
+  margin-bottom: 30px;
+}
+.team_gal img {
+  width: 100%;
+}
+.inner_team_post h2 {
+  color: #222222;
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin: 0 0 10px;
+  line-height: 20px;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+.inner_team_post span {
+  display: inline-block;
+  color: #999999;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 15px;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 16px;
+}
+.inner_team_post .role:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -15px;
+  width: 30px;
+  height: 3px;
+  background: #222222;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+.inner_team_post p {
+  margin-bottom: 16px;
+}
+.social_icons {
+  margin: 0;
+  padding: 0;
+}
+.social_icons li {
+  display: inline-block;
+  margin: 0 3px;
+}
+.social_icons li a {
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  color: #999999;
+  font-size: 15px;
+}
+.social_icons li a:hover {
+  color: #222222;
+}
+.team_post:hover .inner_team_post h2 {
+  color: #f4b350;
+}
+.team_post:hover .inner_team_post span:after {
+  background: #f4b350;
+}
+/* #team_section .owl-theme .owl-controls {
+  position: absolute;
+  width: 100%;
+  top: initial;
+  margin-top: 0;
+  bottom: 0px;
+} */
+/* #team_section .owl-theme .owl-controls .owl-buttons {
+  display: none;
+} */
+/* #team_section .owl-theme .owl-controls .owl-page span {
+  border: 2px solid #97999d;
+}
+#team_section .owl-theme .owl-controls .owl-page.active span,
+#team_section .owl-theme .owl-controls .owl-page:hover span {
+  border-color: #f4b350;
+  background-color: #f4b350;
+} */

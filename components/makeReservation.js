@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import styles from "../styles/MakeReservation.module.css";
 
 function MakeReservation() {
+  // React Hook Form
   const {
     register,
     handleSubmit,

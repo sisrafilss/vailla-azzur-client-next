@@ -874,7 +874,7 @@ section#reservation-section
 /*-------------------------------------------------*/
 /* =  Team section
 /*-------------------------------------------------*/
-section#team-section {
+/* section#team-section {
   padding: 100px 0;
 }
 section#team-section .team-box .team-post {
@@ -991,7 +991,7 @@ section#team-section .owl-theme .owl-controls .owl-page.active span,
 section#team-section .owl-theme .owl-controls .owl-page:hover span {
   border-color: #f4b350;
   background-color: #f4b350;
-}
+} */
 /*-------------------------------------------------*/
 /* =  Statistic section
 /*-------------------------------------------------*/
