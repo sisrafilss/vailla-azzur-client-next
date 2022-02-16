@@ -12,7 +12,7 @@ function SingleMember({ member }) {
   const { id, name, role, image, description, socialMedia } = member;
 
   return (
-    <div className={`item ${styles.team_post}`}>
+    <div className={`item ${styles.team_post} px-3`}>
       <div className={styles.inner_team_post}>
         <div className={styles.team_gal}>
           <Image src={image} alt="" />
