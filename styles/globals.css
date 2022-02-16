@@ -995,7 +995,7 @@ section#team-section .owl-theme .owl-controls .owl-page:hover span {
 /*-------------------------------------------------*/
 /* =  Statistic section
 /*-------------------------------------------------*/
-section.statistic-section {
+/* section.statistic-section {
   padding: 100px 0 80px;
   background: url("../upload/ban2.jpg") center center;
   background-size: cover;
@@ -1035,7 +1035,7 @@ section.statistic-section .statistic-post span.timer {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   margin: 0 0 15px;
-}
+} */
 /*-------------------------------------------------*/
 /* =  Gallery section
 /*-------------------------------------------------*/

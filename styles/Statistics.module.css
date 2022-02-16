@@ -1,0 +1,41 @@
+.statistic_section {
+  padding: 100px 0 80px;
+  background: url("../upload/ban2.jpg") center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+.statistic_box {
+  text-align: center;
+}
+.statistic_post {
+  margin-bottom: 20px;
+}
+.statistic_post h2 {
+  color: #222222;
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+  margin: 0 0 10px;
+  line-height: 20px;
+  font-style: italic;
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-weight: 400;
+  position: relative;
+}
+.statistic_post p {
+  color: #777777;
+  margin: 0;
+  padding-bottom: 5px;
+  position: relative;
+  line-height: inherit;
+}
+.statistic_post span.timer {
+  display: inline-block;
+  color: #f4b350;
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin: 0 0 15px;
+}
