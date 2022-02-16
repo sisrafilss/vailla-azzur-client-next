@@ -1,8 +1,8 @@
 import {
-    faFacebook,
-    faGooglePlus,
-    faInstagram,
-    faTwitter
+  faFacebook,
+  faGooglePlus,
+  faInstagram,
+  faTwitter
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
@@ -19,7 +19,7 @@ function SingleMember({ member }) {
         </div>
         <h2>{name}</h2>
         <span className={styles.role}>{role}</span>
-        <p>{description}</p>
+        <p className={styles.inner_team_post_p}>{description}</p>
         <ul className={styles.social_icons}>
           <li>
             <a

@@ -32,7 +32,7 @@
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
 }
-.inner_team_post span {
+.inner_team_post .role {
   display: inline-block;
   color: #999999;
   font-family: "Playfair Display", serif;
@@ -56,7 +56,7 @@
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
 }
-.inner_team_post p {
+.inner_team_post_p {
   margin-bottom: 16px;
 }
 .social_icons {

@@ -122,16 +122,12 @@ function TeamSection() {
           <p>Sed arcu. Cras consequat.</p>
         </div>
 
-        <div
-          className={`${styles.team_box} owl-wrapper meet_our_team_carousel`}
-        >
-          <div className="owl-carousel" data-num="4">
-            <Slider {...settings}>
-              {team.map((member) => (
-                <SingleMember key={member.id} member={member} />
-              ))}
-            </Slider>
-          </div>
+        <div className={`${styles.team_box}`}>
+          <Slider {...settings}>
+            {team.map((member) => (
+              <SingleMember key={member.id} member={member} />
+            ))}
+          </Slider>
         </div>
       </div>
     </section>

@@ -16,9 +16,6 @@ function Home() {
       <MakeReservation />
       <TeamSection />
       <Statistics />
-      <div style={{marginBottom: '2000px'}}>
-        
-      </div>
       <Script
         type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
