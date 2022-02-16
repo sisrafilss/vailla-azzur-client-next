@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.css";
 import Script from "next/script";
 import About from "../components/about";
+import Blog from "../components/Blog/Blog";
 import MakeReservation from "../components/makeReservation";
 import OurMenu from "../components/ourMenu/ourMenu";
 import Statistics from "../components/Statistics";
@@ -16,6 +17,7 @@ function Home() {
       <MakeReservation />
       <TeamSection />
       <Statistics />
+      <Blog />
       <Script
         type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
