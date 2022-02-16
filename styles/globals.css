@@ -1290,7 +1290,7 @@ section#contact-section .map {
 /*------------------------------------------------- */
 /* =  News section */
 /*------------------------------------------------- */
-section.blog-section {
+/* section.blog-section {
   padding: 100px 0;
 }
 section.blog-section .blog-box {
@@ -1438,7 +1438,7 @@ section.blog-section .blog-box .blog-post ul.share-post li a:hover {
 .pagination-box ul.page-list li a.prev,
 .pagination-box ul.page-list li a.next {
   border: 1px solid transparent;
-}
+} */
 /*------------------------------------------------- */
 /* =  Single Post */
 /*------------------------------------------------- */
@@ -1833,33 +1833,33 @@ body {
   background-color: transparent;
 }
 
-.card:hover {
+.villa-card:hover {
   background-color: white !important;
   box-shadow: 0px 0px 10px 0px gray !important;
   transition: 0.5s !important;
   margin-top: -30px;
 }
 
-.card:hover #blog_tag_div {
+.villa-card:hover #blog_tag_div {
   background-color: #f0f3f9 !important;
   transition: 0.5s !important;
 }
 
-.card:hover #blog_tag_text {
+.villa-card:hover #blog_tag_text {
   color: #4a5b76 !important;
   transition: 0.5s !important;
   font-weight: bold !important;
 }
 
-.card:not(:hover) {
+.villa-card:not(:hover) {
   transition: 0.5s !important;
 }
 
-.card:not(:hover) #blog_tag_div {
+.villa-card:not(:hover) #blog_tag_div {
   transition: 0.5s !important;
 }
 
-.card:not(:hover) #blog_tag_text {
+.villa-card:not(:hover) #blog_tag_text {
   transition: 0.5s !important;
 }
 
@@ -1923,7 +1923,7 @@ input[name="blogs_searchbar"]:focus {
     float: none !important;
   }
 
-  .card-img-top {
+  .villa-card-img-top {
     width: 82vw !important;
   }
 }
