@@ -49,12 +49,14 @@ function FoodPost2({ post }) {
         </div>
       </div>
       {/* <!-- Modal --> */}
+
       <div
-        className="modal fade"
+        className="modal fade mt-0"
         id={`food${id}`}
         tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
+        // style={{ marginTop: "25vh" }}
       >
         <div className="modal-dialog">
           <div className={"modal-content border-0 " + styles.modal_container}>

@@ -163,3 +163,8 @@
   right: 0;
   color: white;
 }
+
+.modal_img {
+  position: absolute;
+  bottom: -250px;
+}
