@@ -1,3 +1,4 @@
+import "bootstrap/dist/css/bootstrap.css";
 import Head from "next/head";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";

@@ -92,6 +92,22 @@
   color: gray;
 }
 
+.btn_blog_view_more_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn_blog_view_more {
+  background-color: transparent;
+  border: 2px solid #f4b350;
+  padding: 8px 20px;
+  color: #f4b350 !important;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
 /* ================================================ */
 /* .blog_section {
   padding: 100px 0;

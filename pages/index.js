@@ -1,4 +1,4 @@
-import "bootstrap/dist/css/bootstrap.css";
+
 import Script from "next/script";
 import About from "../components/about";
 import TopBlogs from "../components/Blog/TopBlogs";
