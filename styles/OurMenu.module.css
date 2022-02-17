@@ -34,7 +34,7 @@
   margin-left: -3px;
   margin-right: -3px;
 }
-.nav_tabs li a {
+.nav_tabs li button {
   display: inline-block;
   border: none;
   text-align: center;
@@ -59,7 +59,7 @@
   border: 1px solid transparent;
   border-bottom: none;
 }
-.active a {
+.active button {
   background: #fff !important;
   color: #222222 !important;
   border: 1px solid #efefef !important;
