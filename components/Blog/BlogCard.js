@@ -6,7 +6,6 @@ import styles from "../../styles/Blog.module.css";
 function BlogCard({ blog }) {
   const { id, title, description, image, tag, category, timeElasped, date } =
     blog;
-
   return (
     <a href="http://localhost:3000" className="text-decoration-none">
       <div
@@ -21,6 +20,10 @@ function BlogCard({ blog }) {
           <Image
             className={`${styles.blog_thumbnail_img} card-img-top`}
             src={image}
+            // style={{ height: "200px", width: "22vw" }}
+            // layout="fill"
+            width={301}
+            height={180}
             alt=""
           />
 

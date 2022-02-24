@@ -99,7 +99,7 @@
   margin-top: 20px;
 }
 
-.btn_blog_view_more {
+.btn_blog_view_more_wrapper a {
   background-color: transparent;
   border: 2px solid #f4b350;
   padding: 8px 20px;

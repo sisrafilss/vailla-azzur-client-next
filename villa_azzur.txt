@@ -1,0 +1,3 @@
+1. Make "Our Menu" navigation bar dynamic.
+2. Site must be mobile responsive.
+3. Modal pic will display on horizontally and vertically top of the screen for any screen size.
