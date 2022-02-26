@@ -317,7 +317,7 @@ a {
   color: #ffffff !important;
 }
 .title-section.white p {
-  color: #ccc;
+  color: #ccc !important;
 }
 #home-section .tp-caption.small_text {
   position: absolute;
@@ -1145,7 +1145,7 @@ ul.filter li:first-child:before {
 /*-------------------------------------------------*/
 /* =  Contact section
 /*-------------------------------------------------*/
-section#contact-section .upper-part {
+/* section#contact-section .upper-part {
   padding: 100px 0 60px;
   background: url("../upload/ban3.jpg") center center;
   background-size: cover;
@@ -1286,7 +1286,7 @@ section#contact-section .map {
   font-family: "Rubik", sans-serif;
   font-size: 14px;
   font-weight: 300;
-}
+} */
 /*------------------------------------------------- */
 /* =  News section */
 /*------------------------------------------------- */
@@ -1811,12 +1811,6 @@ footer p.copyright {
 }
 
 /* =================== CSS were in index.php internal ================= */
-
-.view_more_blog_btn:hover {
-  color: white !important;
-  background-color: #f4b350 !important;
-  transition: 0.5s !important;
-}
 
 .view_more_blog_btn:not(:hover) {
   transition: 0.5s !important;

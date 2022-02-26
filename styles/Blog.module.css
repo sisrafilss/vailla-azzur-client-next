@@ -100,6 +100,12 @@
   border-radius: 4px;
 }
 
+.btn_blog_view_more a:hover {
+  color: white !important;
+  background-color: #f4b350 !important;
+  transition: 0.5s !important;
+}
+
 /* ================================================ */
 /* .blog_section {
   padding: 100px 0;

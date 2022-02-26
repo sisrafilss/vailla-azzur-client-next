@@ -19,12 +19,9 @@ function TopBlogs() {
         <div
           className={`${styles.btn_blog_view_more_wrapper} blog_view_more_div`}
         >
-          <Link
-            href="/blogs"
-            className={`${styles.btn_blog_view_more} view_more_blog_btn`}
-          >
-            View More
-          </Link>
+          <span className={`${styles.btn_blog_view_more} view_more_blog_btn`}>
+            <Link href="/blogs">View More</Link>
+          </span>
         </div>
       </div>
     </section>

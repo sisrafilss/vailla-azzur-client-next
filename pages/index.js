@@ -1,6 +1,8 @@
 import Script from "next/script";
 import About from "../components/about";
 import TopBlogs from "../components/Blog/TopBlogs";
+import ContactSection from "../components/ContactSection/ContactSection";
+import Footer from "../components/Footer/Footer";
 import Gallery from "../components/Gallery/Gallery";
 import MakeReservation from "../components/makeReservation";
 import OurMenu from "../components/ourMenu/ourMenu";
@@ -19,7 +21,8 @@ function Home() {
       <Statistics />
       <TopBlogs />
       <Gallery />
-      <div style={{ marginBottom: "200px" }}></div>
+      <ContactSection />
+      <Footer />
       <Script
         type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
