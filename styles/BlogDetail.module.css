@@ -231,7 +231,7 @@ button[name="blogs_next"]:focus {
   width: 350px;
   height: 200px;
   border-radius: 10px;
-  margin-top: 10px;
+  margin-top: 10px !important;
   object-fit: cover;
 }
 

@@ -1039,7 +1039,7 @@ section.statistic-section .statistic-post span.timer {
 /*-------------------------------------------------*/
 /* =  Gallery section
 /*-------------------------------------------------*/
-section#gallery-section {
+/* section#gallery-section {
   padding-top: 100px;
 }
 section#gallery-section .title-section {
@@ -1141,7 +1141,7 @@ ul.filter li:before {
 ul.filter li:first-child:before {
   display: none;
   margin-right: 0;
-}
+} */
 /*-------------------------------------------------*/
 /* =  Contact section
 /*-------------------------------------------------*/

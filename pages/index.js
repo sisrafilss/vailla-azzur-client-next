@@ -1,7 +1,7 @@
-
 import Script from "next/script";
 import About from "../components/about";
 import TopBlogs from "../components/Blog/TopBlogs";
+import Gallery from "../components/Gallery/Gallery";
 import MakeReservation from "../components/makeReservation";
 import OurMenu from "../components/ourMenu/ourMenu";
 import Statistics from "../components/Statistics";
@@ -18,6 +18,7 @@ function Home() {
       <TeamSection />
       <Statistics />
       <TopBlogs />
+      <Gallery />
       <div style={{ marginBottom: "200px" }}></div>
       <Script
         type="text/javascript"

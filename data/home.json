@@ -1,0 +1,74 @@
+{
+  "gallery": [
+    {
+      "category": "Resturent",
+      "data": [
+        {
+          "id": 1,
+          "image": "/images/rest1.jpg",
+          "description": "Location 1"
+        },
+        {
+          "id": 2,
+          "image": "/images/rest2.jpg",
+          "description": "Location 2"
+        },
+        {
+          "id": 3,
+          "image": "/images/rest3.jpg",
+          "description": "Location 3"
+        },
+        {
+          "id": 4,
+          "image": "/images/rest4.jpg",
+          "description": "Location 4"
+        },
+        {
+          "id": 5,
+          "image": "/images/rest5.jpg",
+          "description": "Location 5"
+        },
+        {
+          "id": 6,
+          "image": "/images/rest6.jpg",
+          "description": "Location 6"
+        },
+        {
+          "id": 7,
+          "image": "/images/rest7.jpg",
+          "description": "Location 7"
+        }
+      ]
+    },
+    {
+      "category": "Food",
+      "data": [
+        {
+          "id": 1,
+          "image": "/images/food1.jpg",
+          "description": "Food 1"
+        },
+        {
+          "id": 2,
+          "image": "/images/food2.jpg",
+          "description": "Food 2"
+        },
+        {
+          "id": 3,
+          "image": "/images/food3.jpg",
+          "description": "Food 3"
+        },
+        {
+          "id": 4,
+          "image": "/images/food4.jpg",
+          "description": "Food 4"
+        },
+        {
+          "id": 5,
+          "image": "/images/food5.jpg",
+          "description": "Food 5"
+        }
+      ]
+    }
+  ]
+}
