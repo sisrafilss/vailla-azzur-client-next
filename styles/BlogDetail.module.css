@@ -200,8 +200,8 @@ button[name="blogs_next"]:focus {
 
 #prev_next_div {
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+  justify-content: space-evenly !important;
+  flex-direction: row !important;
   margin-top: 100px;
 }
 

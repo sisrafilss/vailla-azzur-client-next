@@ -1,13 +1,14 @@
 import { faClock } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../../styles/Blog.module.css";
 
 function BlogCard({ blog }) {
   const { id, title, description, image, tag, category, timeElasped, date } =
     blog;
   return (
-    <a href="http://localhost:3000" className="text-decoration-none">
+    <Link passHref href={`/blogs/${id}`}  className="text-decoration-none">
       <div
         id="blogs_card_main_div"
         className="our_blogs_card "
@@ -43,7 +44,7 @@ function BlogCard({ blog }) {
             <h5 className={`${styles.blog_card_title} card-title`}>{title}</h5>
 
             <p className={`${styles.blog_card_text} card-text`}>
-              {description}
+              {description.slice(0, 150)} [...]
             </p>
 
             <div className={styles.blog_category}>
@@ -58,7 +59,7 @@ function BlogCard({ blog }) {
           </div>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
 

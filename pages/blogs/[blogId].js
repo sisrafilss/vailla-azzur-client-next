@@ -4,14 +4,22 @@ import styles from "../../styles/BlogDetail.module.css";
 import blogs from "../../data/blogs.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
+import Image from "next/image";
+import {
+  faLongArrowAltLeft,
+  faLongArrowAltRight,
+} from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 function BlogDetail() {
   const router = useRouter();
   const { blogId } = router.query;
 
-  const blog = blogs.find((blog) => blog.id === parseInt(blogId));
+  if (!blogId) {
+    return <h1>Loading...</h1>;
+  }
 
-  console.log(blog);
+  const blog = blogs.find((blog) => blog.id === parseInt(blogId));
 
   let prevBlog, nextBlog;
   if (parseInt(blogId) > 1) {
@@ -46,13 +54,15 @@ function BlogDetail() {
 
           <div id={styles.blog_detail_section}>
             <div id={styles.blog_detail_div} className="container">
-              <img
+              <Image
+                src={blog?.image}
                 id={styles.blog_detail_image1}
                 className="blog_detail_image1"
-                src={blog?.image}
                 alt=""
                 data-aos="zoom-in"
                 data-aos-duration="1000"
+                height={506}
+                width={870}
               />
 
               <div
@@ -81,11 +91,13 @@ function BlogDetail() {
                   data-aos="fade-right"
                   data-aos-duration="1000"
                 >
-                  <img
+                  <Image
                     id={styles.blog_detail_image2}
                     className="blog_detail_image2"
                     src={blog?.image}
                     alt=""
+                    height={506}
+                    width={870}
                   />
                 </div>
               </div>
@@ -99,106 +111,128 @@ function BlogDetail() {
                 <p className={styles.blog_detail_para}>{blog?.description}</p>
               </div>
 
-              <img
+              <Image
                 id={styles.blog_detail_image3_mbl}
                 className="blog_detail_image3_mbl"
                 src={blog?.image}
                 alt=""
                 data-aos="fade-left"
                 data-aos-duration="1000"
+                height={506}
+                width={870}
               />
             </div>
           </div>
         </div>
 
         <div className="container" id={styles.prev_next_div}>
-          <div id={styles.prev_next_div_prev}>
-            <span>
-              <button
-                className="btn"
-                name="blogs_prev"
-                id={styles.blogs_prev}
+          {prevBlog?.id && (
+            <div id={styles.prev_next_div_prev}>
+              <span>
+                <Link href={`/blogs/${prevBlog?.id}`} passHref>
+                  <button
+                    className="btn"
+                    name="blogs_prev"
+                    id={styles.blogs_prev}
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    type="button"
+                  >
+                    <span>
+                      {/* <i
+                    className="fas fa-long-arrow-alt-left"
+                    
+                  ></i> */}
+                      <FontAwesomeIcon
+                        id={styles.prev_arrow}
+                        icon={faLongArrowAltLeft}
+                      />
+                    </span>
+                    <span id={styles.prev_text}>Previous</span>
+                    <span>
+                      <FontAwesomeIcon
+                        id={styles.prev_arrow1}
+                        icon={faLongArrowAltLeft}
+                      />
+                    </span>
+                  </button>
+                </Link>
+              </span>
+
+              <Image
+                className={styles.next_prev_image}
+                src={prevBlog?.image}
                 data-aos="fade-right"
                 data-aos-duration="1000"
-                type="button"
+                alt={prevBlog?.title}
+                width={350}
+                height={200}
+              />
+
+              <p
+                id={styles.prev_blogs_title}
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                className="text-dark"
               >
-                <span>
-                  <i
-                    className="fas fa-long-arrow-alt-left"
-                    id={styles.prev_arrow}
-                  ></i>
-                </span>
-                <span id={styles.prev_text}>Previous</span>
-                <span>
-                  <i
-                    className="fas fa-long-arrow-alt-left"
-                    id={styles.prev_arrow1}
-                  ></i>
-                </span>
-              </button>
-            </span>
+                {prevBlog?.title}
+              </p>
+            </div>
+          )}
 
-            <img
-              className={styles.next_prev_image}
-              src={prevBlog?.image}
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              alt={prevBlog?.title}
-            />
+          {nextBlog?.id && (
+            <div id={styles.prev_next_div_next}>
+              <span>
+                <Link href={`/blogs/${nextBlog?.id}`} passHref>
+                  <button
+                    className="btn float-end"
+                    name="blogs_next"
+                    id={styles.blogs_next}
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    type="button"
+                  >
+                    <span>
+                      <FontAwesomeIcon
+                        id={styles.next_arrow1}
+                        icon={faLongArrowAltRight}
+                      />
+                    </span>
+                    <span id={styles.next_text}>Next</span>
+                    <span>
+                      <i
+                        className="fas fa-long-arrow-alt-right"
+                        id="next_arrow"
+                      ></i>
+                      <FontAwesomeIcon
+                        id={styles.next_arrow}
+                        icon={faLongArrowAltRight}
+                      />
+                    </span>
+                  </button>
+                </Link>
+              </span>
 
-            <p
-              id={styles.prev_blogs_title}
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              className="text-dark"
-            >
-              {prevBlog?.title}
-            </p>
-          </div>
-
-          <div id={styles.prev_next_div_next}>
-            <span>
-              <button
-                className="btn float-end"
-                name="blogs_next"
-                id={styles.blogs_next}
+              <Image
+                className={styles.next_prev_image}
+                src={nextBlog?.image}
                 data-aos="fade-left"
                 data-aos-duration="1000"
-                type="button"
+                alt={nextBlog?.title}
+                width={350}
+                height={200}
+              />
+
+              <p
+                id={styles.next_blogs_title}
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                className="text-dark"
               >
-                <span>
-                  <i
-                    className="fas fa-long-arrow-alt-right"
-                    id={styles.next_arrow1}
-                  ></i>
-                </span>
-                <span id={styles.next_text}>Next</span>
-                <span>
-                  <i
-                    className="fas fa-long-arrow-alt-right"
-                    id="next_arrow"
-                  ></i>
-                </span>
-              </button>
-            </span>
-
-            <img
-              className={styles.next_prev_image}
-              src={nextBlog?.image}
-              data-aos="fade-left"
-              data-aos-duration="1000"
-              alt={nextBlog?.title}
-            />
-
-            <p
-              id={styles.next_blogs_title}
-              data-aos="fade-left"
-              data-aos-duration="1000"
-              className="text-dark"
-            >
-              {nextBlog?.title}
-            </p>
-          </div>
+                {nextBlog?.title}
+              </p>
+            </div>
+          )}
         </div>
       </section>
     </>
