@@ -86,6 +86,7 @@ website:    http://www.themepunch.com
 /*-------------------------------------------------*/
 /* =  Header
 /*-------------------------------------------------*/
+/* 
 .navbar-default {
   background: #222222;
   border: none;
@@ -238,7 +239,7 @@ header.active .navbar-nav > li > a.open-fixed-sidebar {
   -ms-transform: rotateX(0deg);
   -o-transform: rotateX(0deg);
   transform: rotateX(0deg);
-}
+} */
 /*-------------------------------------------------*/
 /* =  General
 /*-------------------------------------------------*/

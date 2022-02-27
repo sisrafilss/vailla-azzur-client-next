@@ -5,6 +5,7 @@ import ContactSection from "../components/ContactSection/ContactSection";
 import Footer from "../components/Footer/Footer";
 import Gallery from "../components/Gallery/Gallery";
 import Banner from "../components/Header/Banner";
+import Navigation from "../components/Header/Navigation";
 import MakeReservation from "../components/makeReservation";
 import OurMenu from "../components/ourMenu/ourMenu";
 import Statistics from "../components/Statistics";
@@ -15,6 +16,8 @@ function Home() {
   return (
     <>
       <Banner />
+      {/* <div style={{marginTop: "120px"}}></div> */}
+      <Navigation />
       <About />
       <SpecialSection />
       <OurMenu />
