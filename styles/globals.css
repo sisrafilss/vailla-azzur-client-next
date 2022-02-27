@@ -1977,3 +1977,19 @@ input[name="blogs_searchbar"]:focus {
   /* color: white; */
   font-size: 28px;
 }
+
+/* Customized React Slick */
+.slick-dots li button:before {
+  font-size: 12px !important;
+  opacity: 1 !important;
+  /* border: 1px solid #ddd; */
+}
+
+.slick-dots li button:hover:before {
+  color: rgb(255, 188, 74) !important;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+  color: rgb(255, 188, 74) !important;
+}

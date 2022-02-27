@@ -1,4 +1,24 @@
 {
+  "banners": [
+    {
+      "id": 1,
+      "image": "/images/food1.jpg",
+      "bannerTitle": "Enjoy Our Food",
+      "description": "Only the best ingredients for our dishes"
+    },
+    {
+      "id": 2,
+      "image": "/images/food2.jpg",
+      "bannerTitle": "Elegant Interior and Design",
+      "description": "High-class Professional Service"
+    },
+    {
+      "id": 3,
+      "image": "/images/food6.jpg",
+      "bannerTitle": "Tradition &amp; Passion",
+      "description": "Only the best ingredients for our dishes"
+    }
+  ],
   "gallery": [
     {
       "category": "Resturent",

@@ -4,6 +4,7 @@ import TopBlogs from "../components/Blog/TopBlogs";
 import ContactSection from "../components/ContactSection/ContactSection";
 import Footer from "../components/Footer/Footer";
 import Gallery from "../components/Gallery/Gallery";
+import Banner from "../components/Header/Banner";
 import MakeReservation from "../components/makeReservation";
 import OurMenu from "../components/ourMenu/ourMenu";
 import Statistics from "../components/Statistics";
@@ -13,6 +14,7 @@ import SpecialSection from "../components/todaysSpecialFood/todaySpecialFood";
 function Home() {
   return (
     <>
+      <Banner />
       <About />
       <SpecialSection />
       <OurMenu />
