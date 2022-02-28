@@ -18,7 +18,7 @@ function SingleBanner({ banner }) {
         <div className={styles.banner_text_1}>
           <span style={{ padding: "0px 10px" }}>{bannerTitle}</span>
         </div>
-        <div className={styles.banner_text_2}>{description}</div>
+        <div className={`${styles.banner_text_2} ${styles.small_text}`}>{description}</div>
       </div>
     </div>
   );

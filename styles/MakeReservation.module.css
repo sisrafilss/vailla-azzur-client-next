@@ -1,11 +1,3 @@
-#reservation_section {
-  padding: 100px 0;
-  background: url("../upload/table_reservation.jpg") center center;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-}
 .title_section {
   text-align: left;
   margin-bottom: 40px;

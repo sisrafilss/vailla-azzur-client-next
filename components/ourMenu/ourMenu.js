@@ -197,7 +197,7 @@ function OurMenu() {
   };
 
   return (
-    <section id={styles.menu_section}>
+    <section id="menu-section">
       <div className="container">
         <div className="title-section our_menu">
           <h1>Our Menu</h1>

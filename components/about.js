@@ -8,8 +8,8 @@ import about4 from "../upload/about4.jpg";
 
 function About() {
   return (
-    <section id={styles.about_section}>
-      <div className="container">
+    <section id="about-section">
+      <div  className="container">
         <div className="title-section discover_our_story" data-aos="zoom-in">
           <h1>Discover Our Story</h1>
           <p>

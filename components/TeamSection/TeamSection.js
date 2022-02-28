@@ -115,7 +115,7 @@ function TeamSection() {
   };
 
   return (
-    <section id={styles.team_section}>
+    <section id="team-section">
       <div className="container">
         <div className="title-section meet_our_team">
           <h1>Meet Our Team</h1>

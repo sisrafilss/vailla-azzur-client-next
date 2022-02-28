@@ -44,7 +44,7 @@ const specialFood = [
 
 function SpecialSection() {
   return (
-    <section id={styles.special_section}>
+    <section id="special-section">
       <div className="container">
         <div className="title-section white todays_special">
           <h1>Todays Special</h1>

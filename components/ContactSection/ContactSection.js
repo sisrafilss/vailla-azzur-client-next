@@ -12,7 +12,7 @@ import styles from "../../styles/ContactSection.module.css";
 
 function ContactSection() {
   return (
-    <section id={styles.contact_section}>
+    <section id="contact-section">
       <div className={styles.upper_part}>
         <div className="container">
           <div className="title-section white get_in_touch">

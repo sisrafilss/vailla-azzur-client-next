@@ -12,7 +12,7 @@ function MakeReservation() {
   const onSubmit = (data) => console.log(data);
 
   return (
-    <section id={styles.reservation_section}>
+    <section id="reservation-section">
       <div className="container">
         <div className={styles.reservation_box}>
           <div className="row">

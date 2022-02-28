@@ -7,7 +7,7 @@ function Gallery() {
   const [galMenu, setGalMenu] = useState("all");
 
   return (
-    <section id={styles.gallery_section}>
+    <section id="gallery-section">
       <div className="container">
         <div className={`${styles.title_section} our_gallery title-section`}>
           <h1>Our Gallery</h1>

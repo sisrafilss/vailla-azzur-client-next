@@ -1,12 +1,3 @@
-#special_section {
-  padding: 100px 0;
-  background: url("../upload/ban1.jpg") center center;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-}
-
 .food_line {
   overflow: hidden;
 }
