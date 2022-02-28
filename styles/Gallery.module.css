@@ -2,7 +2,7 @@
   margin-bottom: 50px;
 }
 .gal_project {
-  width: 25vw;
+  width: 25%;
   overflow: hidden;
   position: relative;
   padding-bottom: 0;
@@ -108,7 +108,7 @@
 
 @media (min-width: 992px) {
   .gal_project {
-    width: 25vw;
+    width: 25%;
   }
   .gal_project_img {
     width: 25vw;
