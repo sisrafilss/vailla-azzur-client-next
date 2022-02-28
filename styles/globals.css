@@ -434,7 +434,7 @@ footer {
   text-align: center;
 }
 footer p.copyright {
-  padding: 20px 15px;
+  padding: 7px 15px 0px 15px;
   font-family: "Rubik", sans-serif;
   margin-bottom: 0;
 }
@@ -465,9 +465,7 @@ footer p.copyright {
   section#reservation-section {
     background-position: left center;
   }
-  section#gallery-section .gallery-box .gal-project {
-    width: 33.3333%;
-  }
+
   section#contact-section .map {
     height: 250px;
   }
@@ -479,9 +477,6 @@ footer p.copyright {
   }
 }
 @media (max-width: 767px) {
-  section#gallery-section .gallery-box .gal-project {
-    width: 50%;
-  }
   section#contact-section .map {
     height: 200px;
   }
@@ -499,9 +494,6 @@ footer p.copyright {
   }
 }
 @media (max-width: 500px) {
-  section#gallery-section .gallery-box .gal-project {
-    width: 100%;
-  }
   section#contact-section .map {
     height: 160px;
   }

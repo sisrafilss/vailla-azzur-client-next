@@ -77,7 +77,7 @@ const team = [
 function TeamSection() {
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     accessibility: true,
     arrows: false,
     speed: 1000,

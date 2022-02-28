@@ -5,8 +5,8 @@ function SingleMenu({ menu }) {
   const { id, name, description, price, currency, image } = menu;
 
   return (
-    <>
-      <li>
+    <> 
+       <li>
         <div
           className={`${styles.list_image} cursor-pointer`}
           data-bs-toggle="modal"

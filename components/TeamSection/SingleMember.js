@@ -20,7 +20,7 @@ function SingleMember({ member }) {
         <h2>{name}</h2>
         <span className={styles.role}>{role}</span>
         <p className={styles.inner_team_post_p}>{description}</p>
-        <ul className={styles.social_icons}>
+        {/* <ul className={styles.social_icons}>
           <li>
             <a
               className="facebook"
@@ -61,7 +61,7 @@ function SingleMember({ member }) {
               <FontAwesomeIcon className="" icon={faInstagram} />
             </a>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </div>
   );

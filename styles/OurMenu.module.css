@@ -64,7 +64,7 @@
   margin-bottom: -1px !important;
 }
 .tab_content {
-  padding: 60px;
+  padding: 40px;
   border: 1px solid #efefef;
   background: #fff;
   box-shadow: 0 25px 35px #f7f7f7;
@@ -138,4 +138,22 @@
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: none;
+}
+
+@media screen and (max-width: 991px) {
+  .tab_content {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tab_content {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tab_content {
+    padding: 8px;
+  }
 }

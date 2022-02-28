@@ -5,9 +5,14 @@
   width: 25%;
   overflow: hidden;
   position: relative;
+  padding-bottom: 0;
 }
-.gal_project img {
+.gal_project_img {
   width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
   height: auto;
   transition: all 0.6s ease-in-out;
   -moz-transition: all 0.6s ease-in-out;
@@ -98,4 +103,23 @@
 .filter li:first-child:before {
   display: none;
   margin-right: 0;
+}
+
+@media (max-width: 991px) {
+  .gal_project {
+    width: 33.3333%;
+  }
+}
+
+@media (max-width: 767px) {
+  .gal_project {
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .gal_project {
+    width: 100%;
+    text-align: center;
+  }
 }
