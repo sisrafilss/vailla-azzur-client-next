@@ -5,10 +5,10 @@ function FoodPost2({ post }) {
   const { id, name, description, price, category, image } = post;
   return (
     <>
-      <div className={`${styles.food_post} todays_special_food1`}>
+      <div className={`${styles.food_post} todays_special_food2`}>
         <div
           style={{ flexDirection: "row" }}
-          className={styles.inner_food_post}
+          className={`${styles.inner_food_post} ${styles.inner_food_post2}`}
         >
           {/* <div
                   className="food-gal"
@@ -18,6 +18,17 @@ function FoodPost2({ post }) {
                 >
                   
                 </div> */}
+
+          <div className={styles.food_gal}>
+            <Image
+              className={styles.food_gal_img}
+              src={image}
+              alt=""
+              data-bs-toggle="modal"
+              data-bs-target={`#food${id}`}
+              type="button"
+            />
+          </div>
 
           <div className={styles.food_content}>
             <div className={styles.food_content_box}>
@@ -34,17 +45,6 @@ function FoodPost2({ post }) {
               <span className={styles.category}>{category}</span>
               <span className={styles.special_food_btn}>Add to Cart</span>
             </div>
-          </div>
-
-          <div className={styles.food_gal}>
-            <Image
-              className={styles.food_gal_img}
-              src={image}
-              alt=""
-              data-bs-toggle="modal"
-              data-bs-target={`#food${id}`}
-              type="button"
-            />
           </div>
         </div>
       </div>

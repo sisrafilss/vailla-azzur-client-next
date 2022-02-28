@@ -17,6 +17,7 @@
   -moz-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
+  margin-bottom: -7px;
 }
 .food_gal_img {
   width: 100%;
@@ -158,4 +159,34 @@
 .modal_img {
   position: absolute;
   bottom: -250px;
+}
+
+@media screen and (max-width: 991px) {
+  .food_post {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .inner_food_post {
+    display: block;
+  }
+  .food_gal {
+    width: 100%;
+  }
+
+  .food_content {
+    width: 100%;
+  }
+
+  .food_content_box {
+    padding: 20px;
+  }
+  /* .inner_food_post2 {
+    flex-direction: row-reverse !important;
+    flex-direction: row;
+  } */
+}
+.inner_food_post2 {
+  flex-direction: row-reverse !important;
 }

@@ -471,9 +471,7 @@ footer p.copyright {
   section#contact-section .map {
     height: 250px;
   }
-  section#special-section .today-special-box .food-post {
-    width: 100%;
-  }
+
   section#menu-section .menu-box ul.menu-list-items li:last-child {
     margin-bottom: 30px;
     padding-bottom: 30px;
@@ -495,31 +493,6 @@ footer p.copyright {
   }
 }
 @media (max-width: 600px) {
-  section#special-section .today-special-box .food-post .inner-food-post {
-    display: block;
-  }
-  section#special-section
-    .today-special-box
-    .food-post
-    .inner-food-post
-    .food-gal {
-    width: 100%;
-  }
-  section#special-section
-    .today-special-box
-    .food-post
-    .inner-food-post
-    .food-content {
-    width: 100%;
-  }
-  section#special-section
-    .today-special-box
-    .food-post
-    .inner-food-post
-    .food-content
-    .food-content-box {
-    padding: 20px;
-  }
   section#menu-section .menu-box ul.nav-tabs li a {
     font-size: 13px;
     padding: 10px 20px;

@@ -49,7 +49,7 @@ function FoodPost({ post }) {
       </div>
       {/* <!-- Modal --> */}
       <div
-        className="modal fade"
+        className="modal fade "
         id={`food${id}`}
         tabIndex="-1"
         aria-labelledby="exampleModalLabel"
