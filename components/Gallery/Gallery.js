@@ -24,7 +24,7 @@ function Gallery() {
             <span onClick={() => setGalMenu("restaurant")}>Restaurant</span>
           </li>
           <li>
-            <span onClick={() => setGalMenu("food")}>Restaurant</span>
+            <span onClick={() => setGalMenu("food")}>Food</span>
           </li>
         </ul>
       </div>
