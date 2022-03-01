@@ -8,7 +8,7 @@ function BlogCard({ blog }) {
   const { id, title, description, image, tag, category, timeElasped, date } =
     blog;
   return (
-    <Link passHref href={`/blogs/${id}`}  className="text-decoration-none">
+    <Link passHref href={`/blogs/${id}`} className="text-decoration-none">
       <div
         id="blogs_card_main_div"
         className="our_blogs_card "
@@ -22,25 +22,25 @@ function BlogCard({ blog }) {
             className={`${styles.blog_thumbnail_img} card-img-top`}
             src={image}
             // style={{ height: "200px", width: "22vw" }}
-            // layout="fill"
-            width={301}
-            height={180}
-            alt=""
+            layout="responsive"
+            width={1600}
+            height={961}
+            alt={title}
           />
 
           <div id="blogs_date_div" className={styles.blog_date}>
             <span className="text-light">{date}</span>
           </div>
 
-          <div id="blog_tag_div" className={styles.blog_tag}>
-            <span id="blog_tag_text" className="text-light">
-              {tag}
-            </span>
-          </div>
-
           {/* <!-- <div id="blog_tag_div" style="position: absolute;z-index: 99;background-color: #2eaba0;padding:2px 15px;border-radius: 8px;top: 358px;left: calc(100% - 760px);width: 140px;text-align: center;display: flex;justify-content: center;flex-direction: row;margin-right: 30px;flex-wrap: wrap;float:left"> */}
 
           <div className={`${styles.blog_card_body} card-body`}>
+            <div id="blog_tag_div" className={styles.blog_tag}>
+              <span id="blog_tag_text" className="text-light">
+                {tag}
+              </span>
+            </div>
+
             <h5 className={`${styles.blog_card_title} card-title`}>{title}</h5>
 
             <p className={`${styles.blog_card_text} card-text`}>

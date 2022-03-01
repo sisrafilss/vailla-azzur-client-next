@@ -587,7 +587,7 @@ input[name="blogs_searchbar"]:focus {
   }
 
   #blog_tag_div {
-    left: calc(100% - 55vw) !important;
+    left: calc(100% - 30vw) !important;
     background-color: #5c8bd5 !important;
   }
 

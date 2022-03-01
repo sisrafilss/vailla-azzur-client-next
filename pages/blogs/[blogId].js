@@ -10,6 +10,7 @@ import {
   faLongArrowAltRight,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import Navigation from "../../components/Header/Navigation";
 
 function BlogDetail() {
   const router = useRouter();
@@ -36,6 +37,7 @@ function BlogDetail() {
 
   return (
     <>
+      <Navigation />
       <div id={styles.purple_bg}></div>
 
       <section className="data_table_area" id={styles.blogs_section}>

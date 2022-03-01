@@ -38,7 +38,7 @@ function Navigation() {
       }, 10);
     };
   }, []);
-
+ 
   return (
     <header id="header">
       <div className={styles.navbar}>
